@@ -10,15 +10,15 @@ searchBtn = document.querySelector('.search-btn');
 const inputValue = document.querySelector('.input-text')
 
 const addMeals =() => {
-  
-  food.get(inputValue).then(data => {
+  const text = inputValue.value;
+  food.get(text).then(data => {
     content.innerHTML = ui.addToContent(data.meals)
   })
 }
 
 
 searchBtn.addEventListener('click', () => {
-  
+  console.log(inputValue.value)
   addMeals()
   // e.preventDefault()
 })
