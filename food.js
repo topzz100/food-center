@@ -3,13 +3,13 @@ class Food {
     
   }
 
-  get = async (name) => {
-    // let searchInputTxt = 'chicken breast';
-    const response =  await fetch(`https://www.themealdb.com/api/json/v1/1/search.php?s=${name}`)
+  // get = async (name) => {
+  //   // let searchInputTxt = 'chicken breast';
+  //   const response =  await fetch(`https://www.themealdb.com/api/json/v1/1/search.php?s=${name}`)
 
-    const data = await response.json()
-    console.log(data.meals[0].strInstructions)
-  }
+  //   const data = await response.json()
+  //   console.log(data.meals[0].strInstructions)
+  // }
 
 }
 // function get(){
@@ -29,6 +29,6 @@ class Food {
 //   })
 // }
 
-const food = new Food
+// const food = new Food
 
-food.get('sandwich')
+// food.get('sandwich')

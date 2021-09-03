@@ -21,3 +21,142 @@ nav h4{
 nav h4 span{
   color: rgb(255, 0, 140);
 }
+
+
+/* search-bar-container */
+.search-bar-container{
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+.search-bar{
+  display: flex;
+  width: 90%;
+   margin: 0 auto;
+  border: 1px solid rgb(123, 255, 0);
+  height: 33px;
+  padding: 5px;
+  border-radius: 5px;
+}
+.input-text{
+  width: 100%;
+  border-style: none;
+  outline-style: none;
+}
+.search-btn{
+  font-size: 0.8rem;
+  margin-top: 15px;
+  padding: 8px 12px;
+  text-transform: uppercase;
+  font-weight: 800;
+  background-color: rgb(255, 0, 140);
+  border: none;
+  border-radius: 5px;
+  color: white;
+  transition: 0.5s;
+}
+.search-btn:hover{
+  padding: 10px 15px;
+}
+
+@media(min-width:600px){
+  .search-bar-container{
+    flex-direction: row;
+  }
+  .search-bar{
+    width: 350px;
+    margin: 0;
+  }
+  .search-btn{
+    margin-top: 0;
+    margin-left: 20px;
+  }
+}
+/* end of search-bar-container */
+
+/* food container */
+
+.content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/* single food */
+.single-meal{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 85%;
+  background-color: rgb(241, 240, 240);
+  border-radius: 10px;
+  margin-bottom: 40px;
+  padding: 5px;
+}
+.food-img{
+  width: 100%;
+}
+.food-img img{
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.single-meal h4{
+  margin-top: 10px;
+  font-size: .8rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+.single-meal a{
+  margin-top: 10px;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 8px 10px;
+  background-color: rgb(255, 0, 140);
+  color: white;
+  font-size: .8rem;
+  font-weight: 800;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+/* end of single food */
+/* description */
+#description{
+  display: none;
+}
+/* end of description */
+
+@media(min-width:600px){
+  .food-container{
+    /* padding: 0 50px; */
+  }
+  .content{
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .single-meal{
+    width: 200px;
+    margin: 20px 30px;
+  }
+}
+@media(min-width:1000px){
+  .food-container{
+    padding: 0 100px;
+  }
+  content{
+    flex-direction: row;
+    flex-wrap: wrap;
+   
+  }
+  .single-meal{
+    width: 200px;
+    margin: 20px 50px;
+  }
+}
+
+
+/* end of food container */
