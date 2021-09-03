@@ -1,0 +1,27 @@
+const food = new Food
+const ui = new UI
+
+const content = document.querySelector('.content')
+
+
+searchBtn = document.querySelector('.search-btn');
+
+// searchBtn.addEventListener('click', addMeals)
+const inputValue = document.querySelector('.input-text')
+
+const addMeals =() => {
+  
+  food.get(inputValue).then(data => {
+    content.innerHTML = ui.addToContent(data.meals)
+  })
+}
+
+
+searchBtn.addEventListener('click', () => {
+  
+  addMeals()
+  // e.preventDefault()
+})
+  
+
+  
