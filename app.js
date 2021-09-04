@@ -18,9 +18,7 @@ const addMeals =() => {
 
 
 searchBtn.addEventListener('click', () => {
-  console.log(inputValue.value)
   addMeals()
-  // e.preventDefault()
 })
   
 

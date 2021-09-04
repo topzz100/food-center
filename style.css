@@ -77,6 +77,13 @@ nav h4 span{
 }
 /* end of search-bar-container */
 
+.divide{
+  margin: 0 auto;
+  width: 90%;
+  border: 1px solid rgb(123, 255, 0);
+  margin-bottom: 30px;
+}
+
 /* food container */
 
 .content{
