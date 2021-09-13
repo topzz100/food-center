@@ -1,2 +1,2 @@
 # weather
- using the weather underground api - async await with fetch
+ using a food api - async await with fetch
